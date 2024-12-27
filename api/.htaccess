@@ -1,0 +1,7 @@
+RewriteEngine On    # Turn on the rewriting engine
+# not rewrite css, js and images
+RewriteCond %{REQUEST_URI} !\.(?:css|js|jpg|gif|png|woff)$ [NC]
+
+# pass every thing through index.php
+RewriteRule ^([\w+/-]+)$ index.php?path=$1 [NC,QSA,L]
+Options All -Indexes

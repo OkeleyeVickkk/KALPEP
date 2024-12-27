@@ -1,0 +1,3 @@
+[18-Dec-2024 17:54:34 UTC] Email sending failed: Invalid address:  (From): 
+[18-Dec-2024 17:55:48 UTC] PHP Warning:  Undefined array key "admin_first_name" in /home/enetworkstechnol/public_html/api/admin/adminFunction.php on line 287
+[18-Dec-2024 17:55:48 UTC] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in /home/enetworkstechnol/public_html/api/admin/adminFunction.php on line 287
