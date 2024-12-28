@@ -265,6 +265,7 @@ createApp({
 					},
 				});
 				const result = await response.json();
+				console.log(result);
 				if (result && result.status !== 200) {
 					this.showToast(result.message || "An error occurred. Please try again.", this.state.error);
 				} else {

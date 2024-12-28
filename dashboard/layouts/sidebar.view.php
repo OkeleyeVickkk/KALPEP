@@ -3,7 +3,7 @@
     <li class="v-link-container">
       <ul class="v-main-links">
         <li class="v-main-link-container">
-          <a href="./index.html" class="v-sidebar-link">
+          <a href="./index.php" class="v-sidebar-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -49,15 +49,16 @@
           </div>
         </li> -->
         <li class="v-main-link-container">
-          <a href="./profile.html" class="v-sidebar-link">
+          <a href="./users.php" class="v-sidebar-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
               <path fill="currentColor" d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.4 3.4 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.4 3.4 0 0 0 15 11a3.5 3.5 0 0 0 0-7" />
             </svg>
+
             <span class="v-link-name"> Users </span>
           </a>
         </li>
         <li class="v-main-link-container">
-          <a href="./settings.html" class="v-sidebar-link">
+          <a href="./reports.php" class="v-sidebar-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
               <defs>
                 <mask id="ipSTableReport0">
@@ -74,7 +75,7 @@
           </a>
         </li>
         <li class="v-main-link-container">
-          <a href="./settings.html" class="v-sidebar-link">
+          <a href="./records.php" class="v-sidebar-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
               <path fill="currentColor" d="M15.555 53.125h24.89c4.852 0 7.266-2.461 7.266-7.336V24.508H30.742c-3 0-4.406-1.43-4.406-4.43V2.875H15.555c-4.828 0-7.266 2.484-7.266 7.36v35.554c0 4.898 2.438 7.336 7.266 7.336m15.258-31.828h16.64c-.164-.961-.844-1.899-1.945-3.047L32.57 5.102c-1.078-1.125-2.062-1.805-3.047-1.97v16.9c0 .843.446 1.265 1.29 1.265m-11.836 13.36c-.961 0-1.641-.68-1.641-1.594c0-.915.68-1.594 1.64-1.594h18.07c.938 0 1.665.68 1.665 1.593c0 .915-.727 1.594-1.664 1.594Zm0 8.929c-.961 0-1.641-.68-1.641-1.594s.68-1.594 1.64-1.594h18.07c.938 0 1.665.68 1.665 1.594s-.727 1.594-1.664 1.594Z" />
             </svg>

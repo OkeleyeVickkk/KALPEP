@@ -1,6 +1,6 @@
 <header id="v-header-container">
   <nav class="v-header-inner d-flex align-items-center justify-content-between">
-    <a href="./index.html">
+    <a href="./index.php">
       <div class="v-logo">
         <!-- <img src="./assets/media/images/CardifyLogo.png" title="Cardify Logo" alt="" class="img-fluid" /> -->
         <h3>KALPEP</h3>
