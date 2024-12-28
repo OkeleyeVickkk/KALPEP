@@ -186,19 +186,20 @@ figure {
 		transform: rotate(360deg);
 	}
 }
-.toastify svg{
-    --size: 1.1rem;
-    min-width: var(--size);
+.toastify svg {
+	--size: 1.1rem;
+	min-width: var(--size);
 }
-@media all and (max-width: 650px){
-    .toastify{
-        width: 100%;
-    }
-    .toastify span{
-     font-size: .9rem;   
-    }
-@media all and (max-width: 500px){
-    .toastify{
-        max-width: 90% !important;
-    }
+@media all and (max-width: 650px) {
+	.toastify {
+		width: 100%;
+	}
+	.toastify span {
+		font-size: 0.9rem;
+	}
+	@media all and (max-width: 500px) {
+		.toastify {
+			max-width: 90% !important;
+		}
+	}
 }

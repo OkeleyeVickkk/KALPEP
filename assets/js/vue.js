@@ -23,6 +23,10 @@ createApp({
 				error: "error",
 				success: "success",
 			},
+			sidebarDropdown: {
+				x: false,
+				y: false,
+			},
 		};
 	},
 
@@ -317,6 +321,14 @@ createApp({
 			} finally {
 				this.loading.btn = false;
 			}
+		},
+
+		toggleSidebar: function () {
+			const html = document.querySelector("html");
+			if (!html) return;
+			html.classList.add("layout-menu-expanded");
+			// :class=""
+			// console.log(html);
 		},
 	},
 }).mount("#v-wrapper");
