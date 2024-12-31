@@ -143,58 +143,6 @@
             <span class="v-profile-name mt-2">Okeke JohnPaul</span>
             <span class="v-profile-level">Level 2</span>
           </div>
-          <div class="v-step-container">
-            <div class="v-step-container-title">
-              <h6 class="v-title fw-bold">How to use Cardify</h6>
-            </div>
-            <div class="v-grid-three-container splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide">
-                    <div class="v-each-item" role="presentation">
-                      <p class="v-text">How to activate your card.</p>
-                      <div class="v-video">
-                        <!-- <iframe
-																class="img-fluid"
-																src="https://www.youtube.com/embed/R8o0elbLiSM?si=9FQ9IBiwGypr1yaE&amp;start=21"
-																title="YouTube video player"
-																frameborder="0"
-																allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-																referrerpolicy="strict-origin-when-cross-origin"
-																allowfullscreen></iframe> -->
-                      </div>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="v-each-item" role="presentation">
-                      <span class="v-text">How to order your card.</span>
-                      <!-- <iframe
-															class="img-fluid"
-															src="https://www.youtube.com/embed/huxhqphtDrM?si=0QZMPj1VEZdMmdDQ&amp;controls=0&amp;start=6"
-															title="YouTube video player"
-															frameborder="0"
-															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-															referrerpolicy="strict-origin-when-cross-origin"
-															allowfullscreen></iframe> -->
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="v-each-item" role="presentation">
-                      <span class="v-text">How to link a Cardify card.</span>
-                      <!-- <iframe
-															class="img-fluid"
-															src="https://www.youtube.com/embed/_t0qtSKOpO4?si=EafbqKtwJzCJRcfi&amp;controls=0&amp;start=6"
-															title="YouTube video player"
-															frameborder="0"
-															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-															referrerpolicy="strict-origin-when-cross-origin"
-															allowfullscreen></iframe> -->
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <div class="v-step-container v-step-two">
             <ul class="v-dropdown-link-list">
               <li>
@@ -225,23 +173,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="v-step-container v-step-three">
-            <div class="d-flex flex-column v-apps">
-              <header class="v-apps-header">Download our app</header>
-              <div class="v-apps-container">
-                <a href="">
-                  <div class="v-store-logo">
-                    <img src="./assets/media/images/app-store.png" alt="" class="img-fluid" />
-                  </div>
-                </a>
-                <a href="">
-                  <div class="v-store-logo">
-                    <img src="./assets/media/images/googleplay-store.png" alt="" class="img-fluid" />
-                  </div>
-                </a>
-              </div>
-            </div>
           </div>
           <div class="v-step-container v-step-four">
             <li class="v-dropdown-link-list">

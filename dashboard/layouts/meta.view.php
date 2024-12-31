@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="./assets/css/default.css?ver=<?= time() ?>" />
 <link rel="stylesheet" href="./assets/css/general.css?ver=<?= time() ?>" />
 <link rel="stylesheet" href="./assets/css/modals.css?ver=<?= time() ?>" />
+<link rel="stylesheet" href="./assets/css/index.css?ver=<?= time() ?>" />
 <link rel="stylesheet" href="./assets/css/media-query.css?ver=<?= time() ?>" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />

@@ -163,6 +163,12 @@ figure {
 	align-items: center;
 	justify-content: center;
 }
+a,
+[href],
+[type="button"],
+button {
+	transition: 300ms ease-in-out;
+}
 [v-cloak] {
 	display: none;
 }

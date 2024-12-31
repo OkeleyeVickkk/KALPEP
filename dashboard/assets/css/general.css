@@ -583,6 +583,7 @@
 	display: flex;
 	align-items: stretch;
 	column-gap: 1rem;
+	flex-direction: column;
 }
 .v-right-nav .v-profile-dropdown .v-step-four svg {
 	--size: 1.5rem;
@@ -967,125 +968,6 @@
 	pointer-events: all;
 	opacity: 1;
 	visibility: visible;
-}
-.v-history-wrapper {
-	display: block;
-	width: 100%;
-	padding-top: 1rem;
-}
-.v-history-wrapper .v-each-history {
-	display: block;
-}
-.v-history-wrapper .v-each-history:not(:last-child) .v-main-history-wrap {
-	border-bottom: 1px solid rgba(var(--dark-variant), 0.09);
-}
-.v-history-wrapper .v-each-history .v-main-history-wrap {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	padding-block: 1.5rem;
-}
-.v-each-history .v-main-history-wrap .v-left {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-}
-.v-each-history .v-main-history-wrap :is(.v-image, .v-user-image) {
-	--size: 2rem;
-	width: var(--size);
-	height: var(--size);
-	background-color: #ddd;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	border-radius: 50%;
-	display: none;
-}
-.v-each-history .v-main-history-wrap .v-image {
-	padding: 5px;
-}
-.v-each-history .v-main-data {
-	flex-direction: column;
-	align-items: flex-start;
-	line-height: 1;
-	row-gap: 5px;
-	display: flex;
-}
-.v-each-history .v-main-data .v-dot {
-	--size: 4px;
-	line-height: 1;
-	height: var(--size);
-	background-color: rgba(var(--dark-variant), 0.9);
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	opacity: 0.4;
-	justify-content: center;
-	font-weight: 900;
-	width: var(--size);
-}
-.v-each-history .v-main-data .v-use {
-	font-weight: 500;
-}
-.v-each-history .v-main-data .v-user {
-	font-weight: 600;
-	letter-spacing: 0.3px;
-}
-.v-each-history .v-right .v-trans-val {
-	font-weight: 500;
-}
-.v-each-history .v-right .v-trans-val.debit {
-	color: var(--failed-text-clr);
-}
-.v-each-history .v-main-data :is(.v-status, .v-badge) {
-	align-items: center;
-	justify-content: center;
-	border-radius: 50px;
-	width: auto;
-	padding: 8px 1rem;
-	letter-spacing: 0.1px;
-	font-size: 0.85rem;
-	font-weight: 600;
-	display: none;
-	color: var(--white);
-}
-.v-each-history .v-main-data .v-badge {
-	background-color: rgba(var(--primary-clr-variant), 0.15);
-	letter-spacing: 0.3px;
-	color: var(--primary-clr);
-}
-.v-each-history .v-main-data .v-status.success {
-	background-color: rgba(var(--primary-clr-variant), 0.9);
-}
-.v-each-history .v-main-data .v-status.failed {
-	background-color: var(--failed-text-clr);
-}
-.v-each-history .v-main-data :is(.v-datetime, .v-reason) {
-	opacity: 0.4;
-	font-size: 600;
-	font-size: 0.85rem;
-}
-.v-each-history .v-main-data .v-datetime {
-	font-size: 0.84rem;
-}
-.v-each-history .v-main-data .v-1032n09a {
-	display: flex;
-	align-items: center;
-	column-gap: 6px;
-}
-.v-each-history .v-main-data .v-icon {
-	display: flex;
-	align-items: center;
-}
-.v-each-history .v-main-data .v-icon:has(+ .success) {
-	color: var(--primary-clr);
-}
-.v-each-history .v-main-data .v-icon:has(+ .failed) {
-	color: var(--failed-text-clr);
-}
-.v-each-history .v-main-data .v-icon svg {
-	--size: 1.8rem;
 }
 .offcanvas .offcanvas-body {
 	display: flex;

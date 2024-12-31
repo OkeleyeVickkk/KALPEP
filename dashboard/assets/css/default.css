@@ -170,3 +170,26 @@ input[type="number"]::-webkit-calendar-picker-indicator {
 figure {
 	margin: 0;
 }
+a,
+[href],
+[type="button"],
+button {
+	transition: 300ms ease-in-out;
+}
+.toastify svg {
+	--size: 1.1rem;
+	min-width: var(--size);
+}
+@media all and (max-width: 650px) {
+	.toastify {
+		width: 100%;
+	}
+	.toastify span {
+		font-size: 0.9rem;
+	}
+	@media all and (max-width: 500px) {
+		.toastify {
+			max-width: 90% !important;
+		}
+	}
+}

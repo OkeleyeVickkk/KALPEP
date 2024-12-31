@@ -239,23 +239,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	}).mount();
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-	// const pathname = "index" || "home" || "/dollar-card.html";
-	const allPathnames = ["bills", "index"];
-	allPathnames.forEach((pathname) => {
-		if (window.location.pathname.includes(pathname) || window.location.pathname == pathname) {
-			const btn = document.createElement("button");
-			// btn.setAttribute("data-bs-target", "#cardFunded");
-			// btn.setAttribute("data-bs-target", "#sell-giftcard");
-			btn.setAttribute("data-bs-target", "#buy-giftcard");
-			btn.setAttribute("data-bs-toggle", "offcanvas");
-			btn.style.display = "none";
-			document.body.appendChild(btn);
-			btn.click();
-			btn.remove();
-		}
-	});
-});
-
 handleDropdownOutsideClick();
 handleGeneralOutsideClick();
