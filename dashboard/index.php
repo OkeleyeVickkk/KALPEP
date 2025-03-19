@@ -1,3 +1,4 @@
+DirectoryIndex index.php index.html
 <?php require_once "layouts/header.view.php" ?>
 <div class="v-body-wrapper" id="v-wrapper">
   <!-- header @::start -->
