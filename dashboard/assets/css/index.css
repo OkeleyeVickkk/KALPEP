@@ -24,3 +24,69 @@
 .dropdown .v-dropdown-action:hover {
 	background-color: var(--nav-link-bg);
 }
+
+/* Style for the sidebar */
+.v-menu-sidebar {
+  background-color: #003399; /* Set background color */
+  color: white; /* Set text color */
+}
+
+/* Ensure all text inside the sidebar inherits the white color */
+.v-menu-sidebar a,
+.v-menu-sidebar span,
+.v-menu-sidebar b {
+  color: white; /* Set text color for links, spans, and bold text */
+}
+
+/* Optional: Add hover effect for links */
+.v-menu-sidebar a:hover {
+  color: #ffcc00; /* Change text color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Style for the notification icon */
+.v-toggle-noti svg {
+  fill: #003399; /* Set the icon color to #003399 */
+  transition: fill 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Optional: Change color on hover */
+.v-toggle-noti:hover svg {
+  fill: #ffcc00; /* Change icon color to yellow on hover */
+}
+
+/* Position the password toggle button inside the input box */
+.position-relative {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust spacing from the right edge */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle svg {
+    width: 20px;
+    height: 20px;
+    color: #003399; /* Icon color */
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover svg {
+    color: #ffcc00; /* Hover color */
+}
+.card-container {
+	background-color: #f8f9fa; /* Light background color */
+	padding: 20px; /* Padding around the card */
+	border-radius: 10px; /* Rounded corners */
+	
+}

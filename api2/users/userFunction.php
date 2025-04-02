@@ -226,6 +226,7 @@ function signUp($userInput)
     $account_type = mysqli_real_escape_string($conn, $userInput['account_type']);
     $state = mysqli_real_escape_string($conn, $userInput['state']);
     $password = mysqli_real_escape_string($conn, $userInput['password']);
+    $bvn = mysqli_real_escape_string($conn, $userInput['password']);
 
     if (empty(trim($email))) return error422('Enter your email');
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) return error422('Enter a valid email address');

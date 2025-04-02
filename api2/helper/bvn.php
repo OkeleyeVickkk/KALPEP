@@ -1,19 +1,43 @@
 <?php
-// API for sign-up POST request
-// include_once('helper/bvn_initiate.php');
-include_once('helper/initiate_bvn_lookup.php');
-// api for initiate_bvn_lookup POST REQUEST
+// Add these headers at the top of bvn.php
+header("Access-Control-Allow-Origin: *"); // Allow all origins
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS"); // Allow specific HTTP methods
+header("Access-Control-Allow-Headers: Content-Type, Authorization"); // Allow specific headers
+header("Content-Type: application/json");
+
+// Handle preflight requests
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+// Include the initiate_bvn_lookup.php file
+require_once __DIR__ . '/initiate_bvn_lookup.php'; // Adjust the path if necessary
 
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
 if ($requestMethod == "POST") {
-    $inputData = json_decode(file_get_contents("php://input"), true);
-    if (empty($inputData)) {
-        $initiate_bvn_lookup = initiate_bvn_lookup($_POST);
-    } else {
-        $initiate_bvn_lookup = initiate_bvn_lookup($inputData);
+    try {
+        // Decode the incoming JSON request
+        $input = json_decode(file_get_contents('php://input'), true);
+
+        // Validate BVN input
+        if (empty($input['bvn']) || strlen($input['bvn']) !== 11 || !ctype_digit($input['bvn'])) {
+            echo json_encode(['success' => false, 'message' => 'Invalid BVN. It must be 11 digits.']);
+            exit();
+        }
+
+        // Pass the BVN to the initiate_bvn_lookup logic
+        $userInput = ['bvnno' => $input['bvn']];
+        $response = initiate_bvn_lookup($userInput); // Assuming initiate_bvn_lookup is a function in the included file
+
+        // Return the response from initiate_bvn_lookup
+        echo json_encode(['success' => true, 'data' => $response]);
+    } catch (Exception $e) {
+        // Handle errors
+        echo json_encode(['success' => false, 'message' => $e->getMessage()]);
     }
-    echo $initiate_bvn_lookup;
+    exit();
 } else {
     $data = [
         'status' => 405,

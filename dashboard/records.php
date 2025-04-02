@@ -15,7 +15,7 @@ require_once "../config.php";
           <header class="v-page-title">
             <h3 class="v-title">Welcome <b class="user_first_name"></b></h3>
             <span class="v-subtext">
-              <b>Dashboard<span class="v-day ms-1" data-daytime="day">View</span></b>
+             <b> Records<span class="v-day ms-1" data-daytime="day">View</span></b>
               <span class="d-flex align-items-center justify-content-center">
                 <img src="" data-icon="day" alt="" class="img-fluid ms-1" />
               </span>

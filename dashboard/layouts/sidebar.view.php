@@ -1,7 +1,8 @@
-<aside class="v-menu-sidebar">
+<aside  class="v-menu-sidebar">
   <ul class="v-menu-sidebar-inner">
     <li class="v-link-container">
       <ul class="v-main-links">
+      <b><span class="v-divider user_role"></span> FUNCTION</b>
         <li class="v-main-link-container">
           <a href="./index.php" class="v-sidebar-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
@@ -48,6 +49,7 @@
             </ul>
           </div>
         </li> -->
+        
         <li class="v-main-link-container">
           <a href="./users.php" class="v-sidebar-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">

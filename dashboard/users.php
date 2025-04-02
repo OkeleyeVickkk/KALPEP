@@ -1,4 +1,6 @@
-<?php require_once "layouts/header.view.php" ?>
+<?php require_once "layouts/header.view.php";
+require_once "../config.php";
+?>
 <div class="v-body-wrapper" id="v-wrapper">
   <!-- header @::start -->
   <?php require_once "layouts/nav.view.php" ?>
@@ -11,7 +13,7 @@
           <header class="v-page-title">
             <h3 class="v-title">Welcome back!</h3>
             <span class="v-subtext">
-              Good <span class="v-day ms-1" data-daytime="day">morning, be great today</span>
+              <b>Users<span class="v-day ms-1" data-daytime="day">View</span></b
               <span class="d-flex align-items-center justify-content-center">
                 <img src="" data-icon="day" alt="" class="img-fluid ms-1" />
               </span>

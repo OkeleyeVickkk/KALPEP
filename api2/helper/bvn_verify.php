@@ -129,3 +129,65 @@ if (isset($_SESSION['session_id'])) {
         echo "\nNo OTP received.";
     }
 }
+?>
+
+<!-- BVN Input -->
+<div class="v-form-input">
+    <label for="bvn" class="v-label">BVN</label>
+    <input type="text" v-model="userAuth.bvn" class="form-control" id="bvn" placeholder="Enter your BVN" required />
+</div>
+
+<!-- Modal for OTP -->
+<div id="otpModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Enter OTP</h2>
+        <input type="text" id="otpInput" placeholder="Enter OTP" class="form-control" />
+        <button id="submitOtp" class="btn btn-primary">Submit</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('bvn').addEventListener('input', function () {
+        const bvn = this.value;
+
+        // Check if BVN is 11 digits
+        if (bvn.length === 11 && /^\d+$/.test(bvn)) {
+            // Call BVN endpoint
+            fetch('http://localhost:8000/api2/helper/bvn.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ bvn: bvn })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Open OTP modal
+                        document.getElementById('otpModal').style.display = 'block';
+                    } else {
+                        alert('BVN validation failed. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    });
+
+    // Close modal functionality
+    document.getElementById('closeModal').addEventListener('click', function () {
+        document.getElementById('otpModal').style.display = 'none';
+    });
+
+    // Handle OTP submission
+    document.getElementById('submitOtp').addEventListener('click', function () {
+        const otp = document.getElementById('otpInput').value;
+
+        if (otp) {
+            alert('OTP submitted successfully!');
+            document.getElementById('otpModal').style.display = 'none';
+        } else {
+            alert('Please enter the OTP.');
+        }
+    });
+</script>

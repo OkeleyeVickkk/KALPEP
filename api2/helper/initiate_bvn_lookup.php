@@ -9,7 +9,7 @@ function initiate_bvn_lookup($userInput){
     
 
     if (empty(trim($bvnno))) {
-        return error422('Enter your email');
+        return error422('Enter your bvnno');
     }
     $mono_secret_key = 'live_sk_t434z01lpijmabq27au5'; // Replace with your actual Mono secret key
     $url = 'https://api.withmono.com/v2/lookup/bvn/initiate';
